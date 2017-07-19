@@ -1,5 +1,3 @@
-@import url(http://weloveiconfonts.com/api/?family=zocial);
-
 /* zocial */
 .zocial-github {
   font-family: 'zocial', sans-serif;
@@ -10,36 +8,60 @@ body {
 }
 
 header {
-    border-bottom: 5px solid blue;
+    border-bottom: 5px solid #00f;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header-box {
+    width: calc((100% - 40px)/2);
+    margin-bottom: 20px;
+}
+
+.title-box {
+    margin-right: 40px;
+}
+
+.udacity-logo {
+    vertical-align: middle;
+    width: 90%;
+}
+
+/* Helper span class that centers an image vertically */
+.img-helper {
+    vertical-align: middle;
+    display: inline-block;
+    height: 100%;
 }
 
 h1 {
     font-size: 3em;
-    margin: 0px;
+    margin: 0;
 }
 
 .banner {
     width: 60%;
     margin: 40px auto;
+    display: block;
 }
 
-.banner img {
+.infosys-logo {
     width: 100%;
 }
 
 h2 {
-    font-size: 2.5em;
+    font-size: 2.25em;
 }
 
 .work {
     width: calc((100% - 28px)/3);
-    margin-right: 10px;
+    margin: 20px 10px 0 0;
     text-align: center;
-    display: table-row;
+    font-size: 1.5em;
 }
 
 .work:last-of-type {
-    margin-right: 0px;
+    margin-right: 0;
 }
 
 a {
@@ -48,7 +70,7 @@ a {
 }
 
 a:hover {
-    opacity: .8;
+    opacity: 0.8;
 }
 
 section {
@@ -74,10 +96,6 @@ article {
     border: 2px solid royalblue;
 }
 
-.work-img:hover {
-
-}
-
 hr {
     display: none;
 }
@@ -85,10 +103,9 @@ hr {
 /* Media queries */
 
 @media screen and (max-width: 530px) {
-
-    .app {
+    .work {
         width: 100%;
-        margin-right: 0px;
+        margin-right: 20px 10px 0 0;
     }
 
     hr {
@@ -99,23 +116,33 @@ hr {
     }
 
     h2 {
-        font-size: 1.7em;
+        font-size: 1.75em;
     }
 
-}
-
-@media screen and (min-width: 401px) and (max-width: 800px) {
-
-    .app {
-        width: calc((100% - 24px) / 2);
-        font-size: 1.5em;
-    }
-
-    .h4 {
-        font-size: 1em;
+    .header-box {
+        width: 100%;
     }
 
     article {
         width: 100%;
+    }
+
+    body {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 531px) and (max-width: 800px) {
+
+    .work {
+        width: calc((100% - 24px) / 2);
+    }
+
+    article {
+        width: 100%;
+    }
+
+    .work:last-of-type {
+        margin: 0 auto;
     }
 }
