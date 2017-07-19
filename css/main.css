@@ -1,0 +1,121 @@
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+/* zocial */
+.zocial-github {
+  font-family: 'zocial', sans-serif;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    border-bottom: 5px solid blue;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0px;
+}
+
+.banner {
+    width: 60%;
+    margin: 40px auto;
+}
+
+.banner img {
+    width: 100%;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+.work {
+    width: calc((100% - 28px)/3);
+    margin-right: 10px;
+    text-align: center;
+    display: table-row;
+}
+
+.work:last-of-type {
+    margin-right: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    opacity: .8;
+}
+
+section {
+    margin-top: 20px;
+}
+
+article {
+    width: 85%;
+    margin: 20px auto;
+
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.work-img {
+    object-fit: cover;
+    width: 90%;
+    border-radius: 90%;
+    border: 2px solid royalblue;
+}
+
+.work-img:hover {
+
+}
+
+hr {
+    display: none;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 530px) {
+
+    .app {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    hr {
+        display: block;
+        background-color: lightgray;
+        width: 70%;
+        margin: 20px auto;
+    }
+
+    h2 {
+        font-size: 1.7em;
+    }
+
+}
+
+@media screen and (min-width: 401px) and (max-width: 800px) {
+
+    .app {
+        width: calc((100% - 24px) / 2);
+        font-size: 1.5em;
+    }
+
+    .h4 {
+        font-size: 1em;
+    }
+
+    article {
+        width: 100%;
+    }
+}
